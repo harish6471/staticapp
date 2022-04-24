@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/t28"
+            android:layout_marginTop="18dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How do I Compare  to my peers?"
+            android:textColor="@color/black"
+            android:textSize="22sp"></TextView>
+        <TextView
+            android:id="@+id/t29"
+            android:layout_marginTop="18dp"
+
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="These numbers represent current goal achivement"
+            android:textColor="@color/black"
+            android:textSize="10sp"></TextView>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/t30"
+                android:layout_marginTop="18dp"
+                android:textStyle="bold"
+
+                android:layout_marginLeft="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age:"
+                android:textColor="@color/black"
+                android:textSize="15sp"></TextView>
+
+
+            <Spinner
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:id="@+id/s1"
+
+                android:layout_marginLeft="122dp"
+                android:layout_toRightOf="@+id/t30">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/t31"
+                android:layout_marginTop="58dp"
+                android:textStyle="bold"
+
+                android:layout_marginLeft="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salary:"
+                android:textColor="@color/black"
+                android:textSize="15sp"></TextView>
+
+
+            <Spinner
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:id="@+id/s2"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="58dp"
+                android:layout_toRightOf="@+id/t31">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/t32"
+                android:layout_marginTop="98dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:textColor="@color/black"
+                android:textSize="15sp"></TextView>
+
+
+            <Spinner
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:id="@+id/s3"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="98dp"
+                android:layout_toRightOf="@+id/t32">
+
+            </Spinner>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp">
+
+
+            <TextView
+                android:id="@+id/t33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="18dp"
+                android:text="Retirement Strategy"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:id="@+id/t34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t33"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="38dp"
+                android:text="Employee Contribution"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t34"
+                android:layout_marginLeft="60dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:minWidth="200dp"
+                android:minHeight="50dp"
+                android:progress="12" />
+
+            <TextView
+                android:id="@+id/t36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/progressBar"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="68dp"
+                android:layout_below="@+id/t33"
+                android:text="12 %"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+
+
+
+            <TextView
+                android:id="@+id/t35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t33"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="98dp"
+                android:text="Retiremnet Age"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t35"
+                android:layout_marginLeft="60dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:minWidth="200dp"
+                android:minHeight="50dp"
+                android:progress="65" />
+            <TextView
+                android:id="@+id/t37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t33"
+                android:layout_toRightOf="@+id/progressBar1"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="118dp"
+                android:text="65"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/t38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressBar1"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="28dp"
+                android:text="Employer Contribution"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:id="@+id/t39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressBar1"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="28dp"
+                android:layout_toRightOf="@+id/t38"
+                android:text="8.4%"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/t40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t38"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="28dp"
+                android:text="Interest Rate"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/t41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressBar1"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="68dp"
+                android:layout_toRightOf="@+id/t40"
+                android:text="5%"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/t40"
+                android:layout_marginTop="29dp"
+                android:text="Update">
+
+            </Button>
+
+
+        </RelativeLayout>
+
+
+</LinearLayout>
